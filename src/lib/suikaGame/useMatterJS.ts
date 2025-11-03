@@ -70,8 +70,8 @@ const createFixedItem = ({ setNextItem }: UseMatterJSProps) => {
     render: {
       sprite: {
         texture: getImgUrl(label),
-        xScale: (radius * 2) / 250,
-        yScale: (radius * 2) / 250,
+        xScale: (radius * 2) / 500,
+        yScale: (radius * 2) / 500,
       },
     },
   });
@@ -163,8 +163,8 @@ const event = (
         render: {
           sprite: {
             texture: getImgUrl(label),
-            xScale: (radius * 2) / 250,
-            yScale: (radius * 2) / 250,
+            xScale: (radius * 2) / 500,
+            yScale: (radius * 2) / 500,
           },
         },
       }
@@ -249,8 +249,8 @@ const event = (
           render: {
             sprite: {
               texture: getImgUrl(label),
-              xScale: (radius * 2) / 250,
-              yScale: (radius * 2) / 250,
+              xScale: (radius * 2) / 500,
+              yScale: (radius * 2) / 500,
             },
           },
         });

@@ -20,31 +20,91 @@ export type FruitType = keyof typeof Fruit;
 export const getFruitFeature = (fruit: FruitType) => {
   switch (fruit) {
     case Fruit.BLUEBERRY:
-      return { radius: getRenderWidth() / 24, mass: 0.8, label: Fruit.BLUEBERRY, score: 1 };
+      return {
+        radius: getRenderWidth() / 24,
+        mass: 0.8,
+        label: Fruit.BLUEBERRY,
+        score: 1,
+      };
     case Fruit.STRAWBERRY:
-      return { radius: getRenderWidth() / 18, mass: 1, label: Fruit.STRAWBERRY, score: 3 };
+      return {
+        radius: getRenderWidth() / 18,
+        mass: 1,
+        label: Fruit.STRAWBERRY,
+        score: 3,
+      };
     case Fruit.TANGERINE:
-      return { radius: getRenderWidth() / 12, mass: 1, label: Fruit.TANGERINE, score: 6 };
+      return {
+        radius: getRenderWidth() / 12,
+        mass: 1,
+        label: Fruit.TANGERINE,
+        score: 6,
+      };
     case Fruit.TOMATO:
-      return { radius: getRenderWidth() / 10, mass: 1, label: Fruit.TOMATO, score: 10 };
+      return {
+        radius: getRenderWidth() / 10,
+        mass: 1,
+        label: Fruit.TOMATO,
+        score: 10,
+      };
     case Fruit.AVOCADO:
-      return { radius: getRenderWidth() / 8, mass: 1, label: Fruit.AVOCADO, score: 15 };
+      return {
+        radius: getRenderWidth() / 8,
+        mass: 1,
+        label: Fruit.AVOCADO,
+        score: 15,
+      };
     case Fruit.KOREANMELON:
-      return { radius: getRenderWidth() / 7, mass: 1, label: Fruit.KOREANMELON, score: 21 };
+      return {
+        radius: getRenderWidth() / 7,
+        mass: 1,
+        label: Fruit.KOREANMELON,
+        score: 21,
+      };
     case Fruit.APPLE:
-      return { radius: getRenderWidth() / 6, mass: 1, label: Fruit.APPLE, score: 28 };
+      return {
+        radius: getRenderWidth() / 6,
+        mass: 1,
+        label: Fruit.APPLE,
+        score: 28,
+      };
     case Fruit.PEACH:
-      return { radius: getRenderWidth() / 5.3, mass: 1, label: Fruit.PEACH, score: 36 };
+      return {
+        radius: getRenderWidth() / 5.3,
+        mass: 1,
+        label: Fruit.PEACH,
+        score: 36,
+      };
     case Fruit.COCONUT:
-      return { radius: getRenderWidth() / 4.6, mass: 1, label: Fruit.COCONUT, score: 45 };
+      return {
+        radius: getRenderWidth() / 4.6,
+        mass: 1,
+        label: Fruit.COCONUT,
+        score: 45,
+      };
     case Fruit.MELON:
-      return { radius: getRenderWidth() / 3.95, mass: 1, label: Fruit.MELON, score: 55 };
+      return {
+        radius: getRenderWidth() / 3.95,
+        mass: 1,
+        label: Fruit.MELON,
+        score: 55,
+      };
     case Fruit.WATERMELON:
-      return { radius: getRenderWidth() / 3.5, mass: 1, label: Fruit.WATERMELON, score: 66 };
+      return {
+        radius: getRenderWidth() / 3.5,
+        mass: 1,
+        label: Fruit.WATERMELON,
+        score: 66,
+      };
     case Fruit.GOLDWATERMELON:
-      return { radius: getRenderWidth() / 3.5, mass: 1,label: Fruit.GOLDWATERMELON, score: 100 };
+      return {
+        radius: getRenderWidth() / 3.5,
+        mass: 1,
+        label: Fruit.GOLDWATERMELON,
+        score: 100,
+      };
   }
-}
+};
 
 export const getRandomFruitFeature = () => {
   const fruits = Object.values(Fruit).slice(0, 5);
