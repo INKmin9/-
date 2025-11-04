@@ -61,13 +61,13 @@ const Intro = ({ isVisible, handleGameStart }: IntroProps) => {
       </div>
 
       <a
-        href={"https://github.com/koreacat/suika-game#readme"}
+        href={"https://www.festimap.kr/"}
         target="_blank"
         className={cx("patchLink")}
       >
-        패치노트
+        축제 디지털 전환 솔루션 페스티맵
       </a>
-      <span className={cx("version")}>v1.0.4</span>
+      <span className={cx("version")}>v.2026 제주들불축제</span>
     </div>
   );
 };
