@@ -24,7 +24,7 @@ const GameOverModal = ({ isVisible, onClick, score }: GameOverModalProps) => {
         .share({
           title: "수박 만들기 게임",
           text: "과일들을 모아 수박을 만들어보세요.",
-          url: "https://koreacat.github.io/suika-game/",
+          url: "https://suikagame-festiv.netlify.app/",
         })
         .then(() => console.log("done"))
         .catch((error) => console.log(error));
