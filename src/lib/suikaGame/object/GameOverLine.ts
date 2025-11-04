@@ -25,7 +25,7 @@ export const GameOverGuideLine = Matter.Bodies.rectangle(
     isStatic: true,
     isSensor: true,
     collisionFilter: { group: -1 },
-    render: { fillStyle: "#AC3B3B" },
+    render: { fillStyle: "#FF123940" },
     label: "GAME_OVER_GUIDE_LINE",
   }
 );
