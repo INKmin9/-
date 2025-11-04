@@ -95,7 +95,7 @@ var GameOverModal = function (_a) {
                     "a",
                     __assign(
                       {
-                        href: "https://forms.gle/QbPDG6rzT4spywyf6",
+                        href: "변경",
                         target: "_blank",
                         className: cx("formsLink"),
                       },

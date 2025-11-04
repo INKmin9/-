@@ -60,11 +60,7 @@ const GameOverModal = ({ isVisible, onClick, score }: GameOverModalProps) => {
         ↻ TRY AGAIN?
       </button>
       <div className={cx("linkArea")}>
-        <a
-          href={"https://forms.gle/QbPDG6rzT4spywyf6"}
-          target="_blank"
-          className={cx("formsLink")}
-        >
+        <a href={"변경"} target="_blank" className={cx("formsLink")}>
           의견 남기기
         </a>
         <button className={cx("shareaBtn")} onClick={share}>
