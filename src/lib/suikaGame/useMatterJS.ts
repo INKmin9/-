@@ -37,6 +37,7 @@ const renderOptions = {
   wireframes: false,
   background: "#ffffff40",
   borderRadius: "16px",
+  pixelRatio: window.devicePixelRatio || 1,
 };
 
 const init = (props: UseMatterJSProps) => {
