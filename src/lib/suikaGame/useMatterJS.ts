@@ -18,7 +18,7 @@ const { Engine, Render, World, Mouse, MouseConstraint } = Matter;
 const frameInterval = 1000 / 60; // 60fps
 const getImgUrl = (fruit: Fruit) => {
   // 이미지 경로를 fruit-resize 폴더에서 가져옴
-  return require(`../../resource/fruit-resize/${fruit}.png`);
+  return require(`../../resource/${fruit}.png`);
 };
 
 let engine = Engine.create();
