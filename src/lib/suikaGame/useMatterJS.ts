@@ -16,7 +16,10 @@ import useConfetti from "./useConfetti";
 
 const { Engine, Render, World, Mouse, MouseConstraint } = Matter;
 const frameInterval = 1000 / 60; // 60fps
-const getImgUrl = (fruit: Fruit) => require("../../resource/" + fruit + ".png");
+const getImgUrl = (fruit: Fruit) => {
+  // 이미지 경로를 fruit-resize 폴더에서 가져옴
+  return require(`../../resource/fruit-resize/${fruit}.png`);
+};
 
 let engine = Engine.create();
 let render: Matter.Render | null = null;
@@ -69,7 +72,7 @@ const createFixedItem = ({ setNextItem }: UseMatterJSProps) => {
     friction: 1,
     render: {
       sprite: {
-        texture: getImgUrl(label),
+        texture: getImgUrl(label), // fruit-resize 폴더에서 이미지 경로 설정
         xScale: (radius * 2) / 500,
         yScale: (radius * 2) / 500,
       },
@@ -162,7 +165,7 @@ const event = (
         friction: 1,
         render: {
           sprite: {
-            texture: getImgUrl(label),
+            texture: getImgUrl(label), // fruit-resize 폴더에서 이미지 경로 설정
             xScale: (radius * 2) / 500,
             yScale: (radius * 2) / 500,
           },
@@ -248,7 +251,7 @@ const event = (
           friction: 1,
           render: {
             sprite: {
-              texture: getImgUrl(label),
+              texture: getImgUrl(label), // 동적으로 이미지 경로 설정
               xScale: (radius * 2) / 500,
               yScale: (radius * 2) / 500,
             },

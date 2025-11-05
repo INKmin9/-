@@ -31,7 +31,7 @@ var Engine = Matter.Engine,
   MouseConstraint = Matter.MouseConstraint;
 var frameInterval = 1000 / 60; // 60fps
 var getImgUrl = function (fruit) {
-  return require("../../resource/" + fruit + ".png");
+  return require("../../resource/fruit-resize/" + fruit + ".png");
 };
 var engine = Engine.create();
 var render = null;
@@ -85,9 +85,9 @@ var createFixedItem = function (_a) {
     friction: 1,
     render: {
       sprite: {
-        texture: getImgUrl(label),
-        xScale: (radius * 2) / 500,
-        yScale: (radius * 2) / 500,
+        texture: getImgUrl(label), // fruit-resize 폴더에서 이미지 경로 설정
+        // xScale: (radius * 2) / 500,
+        // yScale: (radius * 2) / 500,
       },
     },
   });
@@ -170,7 +170,7 @@ var event = function (props, effects) {
         friction: 1,
         render: {
           sprite: {
-            texture: getImgUrl(label),
+            texture: getImgUrl(label), // fruit-resize 폴더에서 이미지 경로 설정
             xScale: (radius * 2) / 500,
             yScale: (radius * 2) / 500,
           },
@@ -246,7 +246,7 @@ var event = function (props, effects) {
           friction: 1,
           render: {
             sprite: {
-              texture: getImgUrl(label),
+              texture: getImgUrl(label), // fruit-resize 폴더에서 이미지 경로 설정
               xScale: (radius * 2) / 500,
               yScale: (radius * 2) / 500,
             },
