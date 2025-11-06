@@ -22,8 +22,8 @@ const GameOverModal = ({ isVisible, onClick, score }: GameOverModalProps) => {
     if (navigator.share) {
       navigator
         .share({
-          title: "수박 만들기 게임",
-          text: "과일들을 모아 수박을 만들어보세요.",
+          title: "[2026 제주들불축제 미니게임]",
+          text: "귀여운 [부리부리]를 모아, 가장 큰 [부리부리]를 찾으면 소정의 선물을 드려요!",
           url: "https://suikagame-festiv.netlify.app/",
         })
         .then(() => console.log("done"))
