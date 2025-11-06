@@ -65,7 +65,7 @@ const GameOverModal = ({ isVisible, onClick, score }: GameOverModalProps) => {
           target="_blank"
           className={cx("formsLink")}
         >
-          의견 남기기
+          축제 게임 도입 신청하기
         </a>
         <button className={cx("shareaBtn")} onClick={share}>
           공유하기
